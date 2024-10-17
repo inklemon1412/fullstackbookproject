@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(144, 127, 113, 1);
+  @apply text-white;
+}
+.errmsg{
+  color: red;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+.header{
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:480px;
+  width:100%;
+  box-shadow: 5px 5px 5px rgba(0,0,0);
+}
+.logo{
+  @apply flex justify-around items-center lg:text-5xl;
+  font-family: 'Bonheur Royale', cursive;
+}
+.overlay{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  background-color: rgba(105, 93, 82, 1);
+  height:480px;
+  @apply text-black;
+  
+}
+.Heading-text{
+  @apply lg:text-5xl mb-5 capitalize;
+}
+
+.book-list{
+  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8 lg:mt-20 rounded mx-5 lg:mx-0
+}
+.booklist-container{
+  @apply bg-black rounded-2xl shadow-2xl p-3 h-auto hover:bg-purple-500
+}
+.bookdetail{
+  @apply max-w-5xl mx-auto flex items-center justify-center 
+}
+
+.bookdetail-title{
+  @apply pt-3 font-bold tracking-tight lg:text-2xl;
+}
+
